@@ -1,0 +1,44 @@
+#python quiz game
+Questions= ("How many elements are in the perodic table?: ",
+            "Which animal lays the largest eggs ",
+            "What is the most abundant gas in earth's atmosphere? ",
+            "How many bones are there in the human body: ")
+
+
+Options = (("A. 114","B. 117","c. 118","D. 119"),
+("A. Whale","B.Croc","c.Elephant","D.Ostrich"),
+("A.Nitrogen","B.oxygen","c.Carbon-dioxide","D.Hydrogen"),
+("A.206","B.109","C.107","D.104"))
+
+
+answers = ("c","D","A","B")
+Guesses=[]
+Score= 0
+Questions_num=0
+for question in Questions:
+    print("------------------------")
+    print(Questions)
+    for options in Options[Questions_num]:
+        print(Options)
+    guess = input("Emter (A,B,C,D): ").upper()
+    Guesses.append(guess)
+    if guess== answers[Questions_num]:
+        Score +=1
+        print("Correct!")
+    else:
+        print("Incorrect")
+        print(f"{answers[Questions_num]}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
